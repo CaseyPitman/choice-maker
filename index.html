@@ -15,12 +15,12 @@
   <body>
     <!--Jumbotron-->
     <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-            <h1 class="display-1">Choice Bot</h1>
-            <h1><small>Let me decide for you.</small></h1>
+      <div id="headline-container" class="container">
+            <h1 id="headline" class="display-1 font-weight-bold">Choice Bot</h1>
+            <h1 id="subhead" class="font-weight"><small>Let me decide for you.</small></h1>
         </div>
       </div>
-    </div> 
+  
     <!--End Jumbotron-->
 
     <!--Main Content-->
@@ -28,13 +28,13 @@
     <div id="content-wrapper-intro" class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-sm-6">
-          <h4 class="text-center">Tough time making a decision?<br>Choice Bot can do the work for you.</h4>
+          <h3 class="text-center">How many options do you have?</h3>
         </div>
       </div>
       <form id="option-count-form">
         <div class="row justify-content-center">
           <div id="option-count-input" class="form-group col-xs-4">
-            <input type="number" id="option-count" class="form-control"  placeholder="Number of choices" value="">
+            <input type="number" id="option-count" class="input-fields form-control"  placeholder="Number of choices" value="">
           </div>
         </div>
         <div class="row justify-content-center">
@@ -49,7 +49,7 @@
     <div id="content-wrapper-input" class="conainer-fluid">
       <div class="row justify-content-center">
         <div class="col-sm-6">
-          <h4 class="text-center">Enter your choices below and let<br>Choice Bot make the call for you.</h4>
+          <h3 class="text-center">Enter your options below.</h3>
         </div>
       </div>
       <form id="choice-inputs">
@@ -70,24 +70,20 @@
     <div id="result-content-wrapper" class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-sm-6">
-          <h4 class="text-center">If I were you, I would choose</h4>
+          <h3 class="text-center">If I were you, I would choose</h3>
         </div>
       </div>
       <div class="row justify-content-center">
         <div id="result-display-wrapper" class="col-xs-4">
-          <h2 id="result" class="text-center">
-        
-          </h2>
+          <h1 id="result" class="text-center">
+        <!--Result goes here via jQuery-->
+          </h1>
         </div>
-        
-       
       </div> 
       <div class="row justify-content-center">
           <button id="reload" class="btn btn-outline-primary">Make another decision</button>
       </div>
-
     </div>
-
 
     <!--JavaScript -->
     

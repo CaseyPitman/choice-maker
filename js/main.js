@@ -1,9 +1,6 @@
 //Web app to make a decision
 $(document).ready(function(){
 
-
-    
-
 //User inputs the number of options they have to choose from 
 //and will be given that number of input fields
 
@@ -12,18 +9,16 @@ $(document).ready(function(){
      let optionCount= $("#option-count").val();
         //Loop the number of options and create that number of input fields
         for (let i=0; i<optionCount;i++){
-            $("#choices-input").append("<input id='option-"+i+"' class='input fields form-control' type='text' placeholder='Enter choice' val=''>"); 
+            $("#choices-input").append("<input id='option-"+i+"' class='input-fields form-control' type='text' placeholder='Enter choice' val=''>"); 
     }
         $("#content-wrapper-intro").hide();
         $("#content-wrapper-input").fadeIn(1750);
       return false;     
     });
-    
-    //Array to store input choices
-       
-
+   
     //Randomly choose from input options
     $("#make-choice").click(function(){
+        //store choices
         let choiceArr=[];
         //number of choices
         let optionCount=($("#option-count").val());
@@ -41,22 +36,17 @@ $(document).ready(function(){
         let result = choiceArr[resultNum];
         
         $("#result").text(result);
-        $("#result").hide("fast")
+        $("#result").hide("fast");
+        $("#reload").hide("fast");
         $("#content-wrapper-input").hide();
         $("#result-content-wrapper").show();
         $("#result").fadeIn(2000);
+        $("#reload").fadeIn(3000);
         return false;
     });
   
     $("#reload").click(function(){
         location.reload();
     })
-
-
-
-
-
-
-//call number of choices
 
 });

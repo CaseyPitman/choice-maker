@@ -1,3 +1,6 @@
+
+
+
 #content-wrapper-input{
     display:none;
 }
@@ -5,3 +8,17 @@
 #result-content-wrapper{
     display:none;
 }
+
+.jumbotron {
+    background-color:rgb(60, 179, 113)
+}
+
+.jumbotron-fluid{
+    padding:50px 0;
+}
+
+.input-fields{
+    margin:10px auto;
+}
+
+
