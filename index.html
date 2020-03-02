@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A web app to help make a choice when you can't decide for yourself.">
-    <title>Choice Maker</title>
+    <title>Choice Bot</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
@@ -13,12 +13,38 @@
     <meta name="theme-color" content="#fafafa">
   </head>
   <body>
-    
+    <!--Jumbotron-->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-1">Choice Maker</h1>
+            <h1 class="display-1">Choice Bot</h1>
+            <h1><small>Let me decide for you.</small></h1>
+        </div>
       </div>
+    </div> 
+    <!--End Jumbotron-->
+
+    <!--Main Content-->
+
+    <div id="content-wrapper-input" class="conainer-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <h4 class="text-center">Tough time making a decision?<br>Enter your choices below and let<br>Choice Bot make the call for you.</h4>
+        </div>
+      </div>
+      <form id="choice-inputs">
+        <div class="row justify-content-center">
+          <div id="input-fields" class="form-group col-xs-4">
+            <input type="text" id="choice-1" class="form-control" name="choice-1" placeholder="Enter choice 1"><br>
+            <input type="text" id="choice-2" class="form-control" name="choice-2" placeholder="Enter choice 2"><br>
+          </div>
+        </div>  
+        <div class="row justify-content-center">
+          <button id="add-choice" class="btn btn-outline-primary">Add another choice</button>
+        </div>
+      </form>
     </div>
+
+    
 
 
     <!--JavaScript -->
