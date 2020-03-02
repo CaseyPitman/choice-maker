@@ -24,25 +24,51 @@
     <!--End Jumbotron-->
 
     <!--Main Content-->
+    <!--Intro Page visible on load-->
+    <div id="content-wrapper-intro" class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <h4 class="text-center">Tough time making a decision?<br>Choice Bot can do the work for you.</h4>
+        </div>
+      </div>
+      <form id="option-count-form">
+        <div class="row justify-content-center">
+          <div id="option-count-input" class="form-group col-xs-4">
+            <input type="number" id="option-count" class="form-control"  placeholder="Number of choices" value="">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <button id="input-option-count" class="btn btn-outline-primary">Next</button>
+        </div>
+      </form>
 
+    </div>
+    <!--End intro page-->
+
+    <!--Input Page - hidden on load-->
     <div id="content-wrapper-input" class="conainer-fluid">
       <div class="row justify-content-center">
         <div class="col-sm-6">
-          <h4 class="text-center">Tough time making a decision?<br>Enter your choices below and let<br>Choice Bot make the call for you.</h4>
+          <h4 class="text-center">Enter your choices below and let<br>Choice Bot make the call for you.</h4>
         </div>
       </div>
       <form id="choice-inputs">
         <div class="row justify-content-center">
-          <div id="input-fields" class="form-group col-xs-4">
-            <input type="text" id="choice-1" class="form-control" name="choice-1" placeholder="Enter choice 1"><br>
+          <div id="choices-input" class="form-group col-xs-4">
+           <!-- 
+             <input type="text" id="choice-1" class="form-control" name="choice-1" placeholder="Enter choice 1"><br>
             <input type="text" id="choice-2" class="form-control" name="choice-2" placeholder="Enter choice 2"><br>
+           -->
           </div>
         </div>  
+        <br>
         <div class="row justify-content-center">
-          <button id="add-choice" class="btn btn-outline-primary">Add another choice</button>
+          <button id="make-choice" class="btn btn-outline-primary">Make a decision</button>
         </div>
       </form>
     </div>
+
+    <!--Result page hidden on load-->
 
     
 
