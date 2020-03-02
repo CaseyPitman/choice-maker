@@ -1,3 +1,7 @@
 #content-wrapper-input{
     display:none;
 }
+
+#result-content-wrapper{
+    display:none;
+}

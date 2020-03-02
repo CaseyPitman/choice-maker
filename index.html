@@ -55,10 +55,7 @@
       <form id="choice-inputs">
         <div class="row justify-content-center">
           <div id="choices-input" class="form-group col-xs-4">
-           <!-- 
-             <input type="text" id="choice-1" class="form-control" name="choice-1" placeholder="Enter choice 1"><br>
-            <input type="text" id="choice-2" class="form-control" name="choice-2" placeholder="Enter choice 2"><br>
-           -->
+          <!--Correct number of inputs will show here via jQuery-->
           </div>
         </div>  
         <br>
@@ -70,12 +67,32 @@
 
     <!--Result page hidden on load-->
 
-    
+    <div id="result-content-wrapper" class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <h4 class="text-center">If I were you, I would choose</h4>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div id="result-display-wrapper" class="col-xs-4">
+          <h2 id="result" class="text-center">
+        
+          </h2>
+        </div>
+        
+       
+      </div> 
+      <div class="row justify-content-center">
+          <button id="reload" class="btn btn-outline-primary">Make another decision</button>
+      </div>
+
+    </div>
 
 
     <!--JavaScript -->
     
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>    
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
